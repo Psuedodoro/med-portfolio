@@ -25,6 +25,8 @@ const cars = [
   'https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white',
 ];
 
+const doubleCars = [...cars, ...cars];
+
 export default function SliderTest() {
   return (
     <div className="pt-28 flex items-center flex-col text-center">
@@ -32,14 +34,7 @@ export default function SliderTest() {
 
       <div className="slider">
         <div className="slide-track">
-          {cars.map((car, index) => {
-            return (
-              <div className="slide" key={index}>
-                <img src={car} alt="imageforslider" />
-              </div>
-            );
-          })}
-          {cars.map((car, index) => {
+          {doubleCars.map((car, index) => {
             return (
               <div className="slide" key={index}>
                 <img src={car} alt="imageforslider" />

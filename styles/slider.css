@@ -9,7 +9,7 @@
 }
 
 .slide-track {
-  display: inline-block;
+	display: inline-block;
   animation: move 20s linear infinite;
   white-space: nowrap;
 }

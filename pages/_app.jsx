@@ -1,16 +1,12 @@
-import type { AppProps } from "next/app";
-import "windi.css";
-import "../styles/globals.css";
-import "../styles/slider.css";
-
 /* eslint-disable react/no-unescaped-entities */
-import Navbar from "../components/Navbar";
-import Head from "next/head";
+import '../styles/globals.css'
+import '../styles/slider.css'
+import Navbar from '../components/Navbar'
+import Head from "next/head"
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
   return (
     <div className="cont bg-[#323345] w-screen h-screen">
-      {/* Fix this later!! */}
       {/* <Head>
         <script>
           let theme = localStorage.getItem("theme")      
@@ -32,7 +28,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         </div>
       </div>
     </div>
-  );
+    
+  )
 }
 
-export default MyApp;
+export default MyApp
